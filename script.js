@@ -5,4 +5,8 @@ async function getTreeInventory(search) {
     if (!response.ok) {
         throw new Error(`HTTP Error! status: ${response.status}`);
     }
+
+    // Parse and return
+    const data = await response.json();
+    return data;
 }
