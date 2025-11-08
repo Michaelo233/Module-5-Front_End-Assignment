@@ -70,3 +70,9 @@ async function displayTreeInventory() {
     }
 
 }
+
+const button = document.getElementById('submit');
+
+button.addEventListener("click", () => {
+    displayTreeInventory();
+})
