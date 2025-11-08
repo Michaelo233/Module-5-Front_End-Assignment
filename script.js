@@ -1,3 +1,7 @@
+// fetch api for tree inventory
+const treeInput = document.getElementById('input');
+const display = document.getElementById('display-content')
+
 async function getTreeInventory(search) {
     
     const apiUrl = `https://data.winnipeg.ca/resource/hfwk-jp4h.json?` + 
