@@ -43,6 +43,24 @@ async function displayTreeInventory() {
             console.table(treeTable.slice(0, 20));
             
 
+            const treeContainer = document.createElement('div');
+            display.appendChild(treeContainer);
+            const treeId = document.createElement('span');
+            treeContainer.appendChild(treeId);
+            treeId.innerHTML = tree.tree_id;
+
+            const commonName = document.createElement('span');
+            treeContainer.appendChild(commonName);
+            commonName.innerHTML = tree.common_name;
+
+            const botanicalNameTree = document.createElement('span');
+            treeContainer.appendChild(botanicalNameTree);
+            botanicalNameTree.innerHTML = tree.botanical_name;
+
+            const neighbourhoodTree = document.createElement('span');
+            treeContainer.appendChild(neighbourhoodTree);
+            neighbourhoodTree.innerHTML = tree.neighbourhood;
+
         });
 
 
