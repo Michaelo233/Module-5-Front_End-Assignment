@@ -1,0 +1,75 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Input + button container */
+label {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+input {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background: #0077cc;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+/* Display container */
+#display-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tree result card */
+#display-content div {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 6px;
+}
+
+/* Tree text */
+#display-content span {
+    font-size: 14px;
+    padding: 6px;
+    background: #eee4e4;
+}
+
+/* Responsive styling */
+@media (max-width: 900px) {
+    #display-content div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #display-content div {
+        grid-template-columns: 1fr;
+    }
+}

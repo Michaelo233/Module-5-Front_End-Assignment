@@ -5,7 +5,7 @@ const display = document.getElementById('display-content')
 async function getTreeInventory(search) {
     
     const apiUrl = `https://data.winnipeg.ca/resource/hfwk-jp4h.json?` + 
-                    `$where=common_name LIKE '%${treeInput.value}%'` + 
+                    `$where=common_name LIKE '%${treeInput.value.toLowerCase()}%'` + 
                     '&$order=diameter_at_breast_height DESC' +
                     '&$limit=100';
     const encodedURL = encodeURI(apiUrl);
